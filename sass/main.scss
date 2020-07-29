@@ -1,0 +1,177 @@
+/* Variables */
+
+$background-color: #faf2dc;
+$menu-color:black;
+$footer-menu-titre: grey;
+$separator-color: black;
+$logo-color:black;
+
+
+
+
+/* Body */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $background-color;
+}
+
+
+
+
+
+
+
+/* Header */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+
+    &__image{
+        width: 60px;
+        height: 60px;
+    }
+
+    &__text{
+        color: $logo-color;
+        text-decoration: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+
+    &__element{
+        padding-right: 2rem;
+        color: $menu-color;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }        
+    }
+}
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+
+.footermenu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    align-items: flex-start;
+
+    &__list{
+        flex-direction: column;
+        list-style-type: none;
+        margin-left: 3em;
+        margin-right: 3em;
+
+        &__title{
+            color:$footer-menu-titre;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Index */
+
+.mainindex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 80px;
+
+    &__citation{
+        width:45%;
+        margin-top: 2%;
+        text-align: center;
+        font-size: 5em;
+    }
+    &__image{
+        width: 30%;
+        height: 30%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CV*/
+
+.header__cv{
+    border-bottom: 1px solid $separator-color;
+}
+
+
+.footer__cv{
+    border-top: 1px solid $separator-color;
+}
+
+.cv__heading{
+    &__text{
+        text-align: center;
+    }
+
+}
+
+.cv{
+    display: flex;
+    margin-top:5%;
+    margin-bottom:5%;
+
+    &__categorie{
+        width:25%;
+        margin-left: 5%;
+        
+        &__list{
+            padding-top: 1em;
+        }
+    }
+}
